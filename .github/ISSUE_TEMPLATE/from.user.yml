@@ -1,0 +1,12 @@
+name: "bot_cps ユーザーからの要望"
+description: "bot_cps への機能の要求やバグなどを報告する"
+title: "[User]: "
+labels: ["user"]
+body:
+  - type: textarea
+    id: body-00
+    attributes:
+      label: "内容"
+      description: "bot_cps に報告したい内容"
+    validations:
+      required: true
