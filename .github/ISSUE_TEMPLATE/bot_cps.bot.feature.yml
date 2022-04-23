@@ -1,0 +1,55 @@
+name: "bot_cps.bot に関係する機能要求"
+description: "bot_cps.bot に関する機能要求を報告する"
+title: "[Feature]: "
+labels: ["feature request", "bot_cps.bot"]
+body:
+  - type: input
+    id: body-00
+    attributes:
+      label: "要旨"
+      description: "機能要求の簡単なまとめ"
+    validations:
+      required: true
+  - type: dropdown
+    id: body-01
+    attributes:
+      multiple: false
+      label: "機能を追加する先"
+      options:
+        - "既存のファイル"
+        - "新しいファイル"
+    validations:
+      required: true
+  - type: input
+    id: body-02
+    attributes:
+      label: "ファイル名"
+      description: "既存／新しい の ファイル名"
+    validations:
+      required: true
+  - type: textarea
+    id: body-03
+    attributes:
+      label: 問題
+      description: "その機能が解決しようとしている問題は？その機能が実装されることで，何が簡単に／可能になるか？"
+    validations:
+      required: true
+  - type: textarea
+    id: body-04
+    attributes:
+      label: "問題の理想的な解決策"
+      description: "問題の理想的な解決策とは？実現したいことは？"
+    validations:
+      required: true
+  - type: textarea
+    id: body-05
+    attributes:
+      label: "現在の解決策"
+      description: "現在，問題解決に取り組んでいることがあれば教えて下さい．"
+    validations:
+      required: false
+  - type: textarea
+    id: body-06
+    attributes:
+      label: "補足説明"
+      description: "他に何かあれば，こちらにお願いします．"

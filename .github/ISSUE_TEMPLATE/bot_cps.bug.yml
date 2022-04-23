@@ -1,0 +1,63 @@
+name: "bot_cps に関係するバグレポート"
+description: "bot_cps に関する故障や不正な動作を報告する"
+title: "[Bug]: "
+labels: ["unconfirmed bug", "bot_cps"]
+body:
+  - type: input
+    id: body-00
+    attributes:
+      label: "要旨"
+      description: "バグレポートの簡単なまとめ"
+    validations:
+      required: true
+  - type: textarea
+    id: body-01
+    attributes:
+      label: "再現手順"
+      description: "再現するために行ったこと"
+    validations:
+      required: true
+  - type: textarea
+    id: body-02
+    attributes:
+      label: "再現性のある簡単なコード"
+      description: "バグを再現するコードの断片"
+      render: Python
+  - type: textarea
+    id: body-03
+    attributes:
+      label: "本来の期待される結果"
+      description: "どうなることを期待しましたか？"
+    validations:
+      required: true
+  - type: textarea
+    id: body-04
+    attributes:
+      label: "実際の結果"
+      description: "実際に起きたことは？"
+    validations:
+      required: true
+  - type: textarea
+    id: body-05
+    attributes:
+      label: "システム情報"
+      description: "`echo \"import bot_cps; print(bot_cps.__version__)\" | python` と `echo \"import compass; print(compass.__version__)\" | python` を実行し，その結果を貼り付けて下さい．"
+    validations:
+      required: true
+  - type: checkboxes
+    id: body-06
+    attributes:
+      label: Checklist
+      description: "バグレポートを報告する前に，以下のことを確認しましょう！"
+      options:
+        - label: "open issue を検索して，重複していないかを確認しました．"
+          required: true
+        - label: "可能な限り，traceback の全体を載せました．"
+          required: true
+        - label: "TOKEN などの情報を削除しました．"
+          required: true
+  - type: textarea
+    id: body-07
+    attributes:
+      label: "補足説明"
+      description: "他に何かあれば，こちらにお願いします．"
